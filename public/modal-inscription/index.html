@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Submit Entries
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            .modal-backdrop {
+    z-index: inherit;
+}
+        </style>
+    </head>
+    <body>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                Register
+        </button>
+                
+        <!-- The Modal -->
+        <div class="modal fade" id="wmyModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Connexion modal </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-danger" value="Submit" />
+                    </div>
+                </div>
+            </div>
+        </div>          
+
+
+        <form action="../php/register.php" method="post">
+            <div class="modal fade in" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+    
+                    <!-- Modal Header -->
+                    <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+                            Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fas fa-user-plus mr-1"></i>
+                            Register</a>
+                        </li>
+                      </ul>
+    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <!--form action="web.php" method="post"-->
+
+                        <div class="tab-content">
+                            <!--Panel 7-->
+                            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                  
+                              <!--Body-->
+                              <div class="modal-body mb-1">
+                                <div class="md-form form-sm mb-5">
+                                  <i class="fas fa-envelope prefix"></i>
+                                  <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+                                  <small id="emailHelp" class="form-text text-muted">Pas de pub ! C'est promis ! </small>
+
+                                  
+                                  <div class="modal-footer">
+                                    <button type="submit" class="btn btn-default pull-right" >Envoye </button>
+                                </div>
+                                </div>
+                                    <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                                 </div>
+                
+                          </div>
+                          <!--/.Panel 7-->
+
+                            <!--Panel 8-->
+                            <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                                <!--Body-->
+                                <div class="modal-body">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fas fa-envelope prefix"></i>
+                                    <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+                                </div>
+
+
+                    <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-default pull-right" >Je cree mon compte</button>
+                        </div>
+                        </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Fermer</button>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
